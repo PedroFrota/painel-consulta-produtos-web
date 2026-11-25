@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Consulta de Produtos - Atacado &amp; Varejo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container">
+            <h1>Consulta de Produtos e Simulador de Carrinho</h1>
+            <p>Preço de atacado aplicado automaticamente a partir de 5 unidades do mesmo item.</p>
+        </div>
+    </header>
+
+    <main class="container layout-principal">
+        <section class="catalogo-area">
+            <div class="filtros">
+                <input type="text" id="campoBusca" placeholder="Buscar por nome ou código de barras...">
+                <select id="filtroCategoria">
+                    <option value="Todas">Todas as categorias</option>
+                    <option value="Mercearia">Mercearia</option>
+                    <option value="Laticínios">Laticínios</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Limpeza">Limpeza</option>
+                </select>
+            </div>
+
+            <div id="listaProdutos" class="grid-produtos"></div>
+        </section>
+
+        <aside class="carrinho-area">
+            <h2>Carrinho de Compras</h2>
+            <ul id="listaCarrinho" class="lista-carrinho">
+                <li class="vazio">Nenhum item adicionado.</li>
+            </ul>
+            <div class="resumo-carrinho">
+                <p>Total de itens: <strong id="totalItens">0</strong></p>
+                <p class="valor-total">Total: <strong id="valorTotal">R$ 0,00</strong></p>
+                <button id="btnLimpar" class="btn-secundario" type="button">Limpar Carrinho</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
