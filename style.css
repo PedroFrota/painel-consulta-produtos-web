@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #1f2937;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.topo {
+    background-color: #0f4c81;
+    color: #ffffff;
+    padding: 24px 0;
+    margin-bottom: 24px;
+}
+
+.topo h1 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+}
+
+.topo p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.layout-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    padding-bottom: 40px;
+}
+
+.filtros {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.filtros input,
+.filtros select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+}
+
+.filtros input {
+    flex: 1;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card-produto {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badge-categoria {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0f4c81;
+    background-color: #e0f2fe;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    width: fit-content;
+}
+
+.card-produto h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.codigo {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+.precos {
+    margin-bottom: 12px;
+}
+
+.preco-varejo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111827;
+}
+
+.preco-atacado {
+    font-size: 0.85rem;
+    color: #15803d;
+    font-weight: 600;
+}
+
+.btn-primario {
+    background-color: #0f4c81;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primario:hover {
+    background-color: #0c3b64;
+}
+
+.carrinho-area {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.carrinho-area h2 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.lista-carrinho {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.9rem;
+}
+
+.btn-remover {
+    background: none;
+    border: none;
+    color: #dc2626;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.resumo-carrinho {
+    border-top: 2px solid #e2e8f0;
+    padding-top: 12px;
+}
+
+.valor-total {
+    font-size: 1.15rem;
+    margin: 8px 0 16px;
+}
+
+.btn-secundario {
+    width: 100%;
+    background-color: #e2e8f0;
+    color: #1f2937;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-secundario:hover {
+    background-color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+    .layout-principal {
+        grid-template-columns: 1fr;
+    }
+}
